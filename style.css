@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --white-PG: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-BHB: hsl(0, 0%, 95%);
+}
+
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 1000px;
+    display: flex;
+}
+
+img{
+    width: 70px;
+    margin-bottom: 2rem;
+}
+
+ h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray-BHB);
+    margin-bottom: 2rem;
+ }
+
+ p{
+    color: var(--white-PG);
+    margin-bottom: 5rem;
+    line-height: 30px;
+    font-size: 1.1rem;
+ }
+
+ button{
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    background: var(--Very-light-gray-BHB);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: inherit;
+ }
+
+ .sedans.card{
+    background: var(--Bright-orange);
+    padding: 3rem;
+    border-radius: 10px 0 0 10px;
+ }
+
+ .suvs.card{
+    background: var(--Dark-cyan);
+    padding: 3rem;
+ }
+
+ .luxury.card{
+    background: var(--Very-dark-cyan);
+    padding: 3rem;
+    border-radius: 0 10px 10px 0;
+ }
+
+ .sedansBtn{
+    color: var(--Bright-orange);
+    border: 1px solid var(--Very-light-gray-BHB);
+    font-weight: bold;
+    transition: 0.3s;
+ }
+
+ .suvsBtn{
+    color: var(--Dark-cyan);
+    border: 1px solid var(--Very-light-gray-BHB);
+    font-weight: bold;
+    transition: 0.3s;
+ }
+
+ .luxuryBtn{
+    color: var(--Very-dark-cyan);
+    border: 1px solid var(--Very-light-gray-BHB);
+    font-weight: bold;
+    transition: 0.3s;
+ }
+
+.sedansBtn:hover,
+.suvsBtn:hover,
+.luxuryBtn:hover{
+    background: transparent;
+    color: var(--Very-light-gray-BHB);
+    border: 1px solid var(--Very-light-gray-BHB);
+}
+
+
+/* MAKE IT RESPONSIVE */
+@media (max-width: 600px){
+    .container{
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .sedans.card{
+        padding: 2rem;
+        border-radius: 10px 10px 0 0;
+     }
+
+     .suvs.card{
+        padding: 2rem;
+     }
+
+     .luxury.card{
+        padding: 2rem;
+        border-radius: 0 0 10px 10px;
+     }
+     img{
+        width: 60px;
+        margin-bottom: 2rem;
+    }
+    
+     h1{
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+     }
+    
+     p{
+        margin-bottom: 1.5rem;
+        line-height: 25px;
+        font-size: 1rem;
+     }
+    
+     button{
+        padding: .8rem 2rem;
+        font-size: .8rem;
+     }
+  
+}
+
